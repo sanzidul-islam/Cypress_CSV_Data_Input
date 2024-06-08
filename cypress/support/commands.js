@@ -22,4 +22,10 @@
 //
 //
 // -- This will overwrite an existing command --
+<<<<<<< HEAD
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+=======
+// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import 'cypress-file-upload';
+/// <reference types="cypress-xpath" />
+>>>>>>> 29ddf3b (2nd commit)
