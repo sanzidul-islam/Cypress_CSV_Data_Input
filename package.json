@@ -3,10 +3,7 @@
     "cypress": "^13.10.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-xpath": "^2.0.1",
-<<<<<<< HEAD
-=======
     "papaparse": "^5.4.1",
->>>>>>> 29ddf3b (2nd commit)
     "xlsx": "^0.18.5"
   }
 }

@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-const { defineConfig } = require("cypress");
-
-module.exports = defineConfig({
-  e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-  },
-});
-=======
 const fs = require('fs');
 const path = require('path');
 const Papa = require('papaparse');
@@ -37,4 +26,3 @@ module.exports = {
     },
   },
 };
->>>>>>> 29ddf3b (2nd commit)

@@ -1,20 +1,11 @@
 import loginpageobject from "../PageObjects/loginPage"
 import datauploadpageobjects from "../PageObjects/dataupload"
-<<<<<<< HEAD
-=======
 const { readCsv } = require('../support/readCsv');
->>>>>>> 29ddf3b (2nd commit)
 describe('Task',()=>{
   Cypress.on('uncaught:exception', (err, runnable) => {
       return false
       })
 
-<<<<<<< HEAD
-      
-      Cypress._.times(1, () => {
-
-          it('Task Action', () => {
-=======
       const csvFilePath = 'cypress/fixtures/Dataset.csv'; // Path to your CSV file in the fixtures folder
 
     let csvData;
@@ -33,7 +24,6 @@ describe('Task',()=>{
 
            
 
->>>>>>> 29ddf3b (2nd commit)
               cy.visit('https://staging-scweb.arcapps.org/')
   
               cy.fixture('data').then((data)=> {
@@ -43,24 +33,12 @@ describe('Task',()=>{
                   lb.signinusername(data.username)
                   lb.signinpassword(data.password)
                   lb.submitlogin()
-<<<<<<< HEAD
-                  cy.wait(2000)
-=======
                   cy.wait(3000)
->>>>>>> 29ddf3b (2nd commit)
 
                   lc.EnterProvince();
                   lc.EnterDistrict();
                   lc.Searchfacility();
                   lc.Enter();
-<<<<<<< HEAD
-                  lc.Nrc();
-                  lc.SearchNRC(data.searchtext)
-                  lc.searchbutton();
-                  lc.AttendtoPatient();
-                  lc.Vital();
-                  lc.AddVital();
-=======
                   cy.wait(2000)
                   lc.Nrc();
                   lc.SearchNRC(data.searchtext)
@@ -94,7 +72,6 @@ describe('Task',()=>{
                   });
 
                   
->>>>>>> 29ddf3b (2nd commit)
 
 
 
@@ -108,8 +85,3 @@ describe('Task',()=>{
           })
   
       })
-<<<<<<< HEAD
-
-})
-=======
->>>>>>> 29ddf3b (2nd commit)

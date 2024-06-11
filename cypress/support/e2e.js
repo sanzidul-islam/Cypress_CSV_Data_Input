@@ -17,9 +17,5 @@
 import './commands'
 
 // Alternatively you can use CommonJS syntax:
-<<<<<<< HEAD
-// require('./commands')
-=======
 // require('./commands')
 require('cypress-xpath');
->>>>>>> 29ddf3b (2nd commit)
