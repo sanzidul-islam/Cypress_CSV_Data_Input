@@ -16,7 +16,7 @@ describe('Task',()=>{
     cy.task('readCsv', { filePath: csvFilePath }).then((data) => {
       csvData = data;
       cy.log('CSV data loaded successfully.');
-    });
+      });
     });
    
       Cypress._.times(1, () => {
@@ -50,7 +50,7 @@ describe('Task',()=>{
                   cy.wait(2000)
 
                   cy.wrap(csvData).each((row, index) => {
-                  cy.log(`Submitting row ${index + 1}`);
+                    cy.log(`Submitting row ${index + 1}`);
 
                   lf.enterWeight(row.Weight);
                   lf.enterHeight(row.Height);
@@ -62,6 +62,7 @@ describe('Task',()=>{
                   lf.enterOxygenSaturation(row.OxygenSaturation);
                   lf.submitForm();
                   cy.wait(2000); 
+                  
                   lc.AddVital();
 
                 });
